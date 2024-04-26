@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/black">
+        android:background="@color/darkgrey">
 
         <TextView
             android:id="@+id/title"
@@ -29,9 +29,10 @@
 
         </TextView>
         <ImageView
+            android:id="@+id/topNav_btnSearch"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:src="@drawable/baseline_search_48"
             android:padding="10dp">
 
@@ -44,17 +45,22 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:background="@color/darkgrey"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topNavContainer"
+        app:layout_constraintBottom_toTopOf="@id/navContainer"
+        >
 
     </androidx.fragment.app.FragmentContainerView>
 
     <LinearLayout
         android:orientation="horizontal"
+
         android:id="@+id/navContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@color/black">
+        android:background="@color/darkgrey">
 
 
 
@@ -63,7 +69,7 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_search_48"
+            android:src="@drawable/baseline_local_movies_48"
             android:padding="10dp">
 
         </ImageView>
@@ -74,7 +80,7 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_search_48"
+            android:src="@drawable/baseline_tv_48"
             android:padding="10dp">
 
         </ImageView>
@@ -85,18 +91,18 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_search_48"
+            android:src="@drawable/baseline_remove_red_eye_24"
             android:padding="10dp">
 
         </ImageView>
 
 
         <ImageView
-            android:id="@+id/nav_btnNiklas"
+            android:id="@+id/nav_btnniklas"
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_search_48"
+            android:src="@drawable/baseline_videogame_asset_48"
             android:padding="10dp">
 
         </ImageView>
